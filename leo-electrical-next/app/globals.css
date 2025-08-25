@@ -1,0 +1,16 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-from: #0ea5e9;
+  --brand-to: #22d3ee;
+}
+.gradient-hero {
+  background: radial-gradient(1200px 600px at 10% 10%, rgba(34,211,238,0.25), transparent 70%),
+              linear-gradient(135deg, var(--brand-from) 0%, var(--brand-to) 100%);
+}
+.container {
+  @apply max-w-6xl;
+}
