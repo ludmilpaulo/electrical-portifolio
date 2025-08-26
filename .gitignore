@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Next.js
+.next/
+**/.next/
+
+# Builds / caches
+dist/
+build/
+out/
+.turbo/
+.cache/
+
+# Env & local
+.env
+.env.*
+!.env.example
+.vercel/
+*.log
+.DS_Store
