@@ -1,0 +1,114 @@
+[
+  {
+    "model": "core.Service",
+    "pk": 1,
+    "fields": {
+      "name": "Electrical",
+      "description": "24/7 reliable electrical services for homes, businesses, and industrial sites. From installations to emergency repairs, our certified electricians ensure safety and compliance.",
+      "benefits": [
+        "Emergency call-outs available 24/7",
+        "Certified and licensed electricians",
+        "Safe and compliant installations",
+        "Energy-efficient solutions"
+      ],
+      "created": "2025-09-07T00:00:00Z",
+      "updated": "2025-09-07T00:00:00Z"
+    }
+  },
+  {
+    "model": "core.Service",
+    "pk": 2,
+    "fields": {
+      "name": "Plumbing",
+      "description": "Expert plumbing services including installations, repairs, and emergency leak detection for residential, commercial, and industrial clients.",
+      "benefits": [
+        "Fast emergency response",
+        "Leak detection and repair",
+        "Modern bathroom & kitchen fittings",
+        "Preventive maintenance"
+      ],
+      "created": "2025-09-07T00:00:00Z",
+      "updated": "2025-09-07T00:00:00Z"
+    }
+  },
+  {
+    "model": "core.Service",
+    "pk": 3,
+    "fields": {
+      "name": "Solar",
+      "description": "Sustainable solar power solutions to reduce energy bills and ensure reliable backup during load shedding. We design, supply, and install systems tailored to your needs.",
+      "benefits": [
+        "Lower electricity costs",
+        "Backup power during outages",
+        "Eco-friendly renewable energy",
+        "Custom residential & commercial systems"
+      ],
+      "created": "2025-09-07T00:00:00Z",
+      "updated": "2025-09-07T00:00:00Z"
+    }
+  },
+  {
+    "model": "core.Service",
+    "pk": 4,
+    "fields": {
+      "name": "Irrigation System",
+      "description": "Smart irrigation solutions for gardens, farms, and commercial landscapes. Automated systems designed to save water and boost productivity.",
+      "benefits": [
+        "Water-efficient smart systems",
+        "Custom design for any property size",
+        "Durable installations",
+        "Improved crop and garden health"
+      ],
+      "created": "2025-09-07T00:00:00Z",
+      "updated": "2025-09-07T00:00:00Z"
+    }
+  },
+  {
+    "model": "core.Project",
+    "pk": 1,
+    "fields": {
+      "title": "Residential Electrical Upgrade",
+      "description": "Full rewiring and electrical compliance certification for a modern family home in Cape Town.",
+      "location": "Cape Town",
+      "completed_date": "2025-06-15",
+      "created": "2025-09-07T00:00:00Z",
+      "updated": "2025-09-07T00:00:00Z"
+    }
+  },
+  {
+    "model": "core.Project",
+    "pk": 2,
+    "fields": {
+      "title": "Commercial Plumbing Installation",
+      "description": "Installed a high-capacity plumbing system for a multi-story office building, ensuring long-term reliability and efficiency.",
+      "location": "Johannesburg",
+      "completed_date": "2025-04-28",
+      "created": "2025-09-07T00:00:00Z",
+      "updated": "2025-09-07T00:00:00Z"
+    }
+  },
+  {
+    "model": "core.Project",
+    "pk": 3,
+    "fields": {
+      "title": "Industrial Solar Plant",
+      "description": "Designed and installed a 250kW solar power system for an industrial client, reducing operational costs significantly.",
+      "location": "Durban",
+      "completed_date": "2025-02-10",
+      "created": "2025-09-07T00:00:00Z",
+      "updated": "2025-09-07T00:00:00Z"
+    }
+  },
+  {
+    "model": "core.Project",
+    "pk": 4,
+    "fields": {
+      "title": "Smart Irrigation System",
+      "description": "Automated irrigation system installed for a large residential estate, saving 40% in water consumption.",
+      "location": "Pretoria",
+      "completed_date": "2025-03-20",
+      "created": "2025-09-07T00:00:00Z",
+      "updated": "2025-09-07T00:00:00Z"
+    }
+  }
+]
