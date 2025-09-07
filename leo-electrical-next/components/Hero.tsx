@@ -11,11 +11,17 @@ export default function Hero() {
       <div className="container mx-auto px-4 py-20 grid md:grid-cols-2 items-center gap-10">
         <div>
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
-            Safe, Certified Electrical Installations & Solar-Ready Upgrades
+            Safe, certified of electrical and plumbing engineering.
           </h1>
           <p className="mt-4 text-lg/relaxed text-white/90">
-            Residential • Commercial • Industrial • Plumbing Integration.
-            Get a free on-site assessment and transparent quote.
+            Our 24/H services:
+
+            * Electrical 
+            * plumbing 
+            * Solar 
+            * irrigation system 
+
+            * Residential * commercial * industrial
           </p>
           <ul className="mt-6 space-y-2">
             {["COC compliant", "Emergency call-outs", "Warranty on workmanship"].map((t) => (
