@@ -1,7 +1,7 @@
 
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || "http://127.0.0.1:8000";
+const baseUrl = "https://leokalonga.pythonanywhere.com";
 
 export const api = createApi({
   reducerPath: "leoApi",
