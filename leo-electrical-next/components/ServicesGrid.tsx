@@ -1,16 +1,34 @@
-
 'use client';
 
 import { useGetServicesQuery } from "@/redux/api";
-import { Wrench, ShieldCheck, Plug, SunMedium, Zap, FlameKindling } from "lucide-react";
+import { 
+  Wrench, 
+  ShieldCheck, 
+  Plug, 
+  Sun,  // updated sun icon
+  Zap, 
+  FlameKindling, 
+  Droplets // for irrigation water drops
+} from "lucide-react";
+
+// Custom Irrigation Icon combining a sprinkler + water drops
+const IrrigationIcon = () => (
+  <div className="relative flex items-center justify-center">
+    {/* Sprinkler shape */}
+    <div className="w-5 h-5 border-t-4 border-b-0 border-l-4 border-r-4 border-brand-700 rounded-t-md"></div>
+    {/* Water drops */}
+    <Droplets className="w-5 h-5 text-sky-500 absolute -top-6" />
+  </div>
+);
 
 const icons: Record<string, any> = {
-  "Electrical Installations": Plug,
-  "Solar Installations": SunMedium,
+  "Electrical": Plug,
+  "Solar": Sun,       // ☀️ clearer sun icon
   "Compliance (COC)": ShieldCheck,
   "Fault Finding": Zap,
   "Plumbing": Wrench,
-  "Geyser/Heatpump": FlameKindling
+  "Geyser/Heatpump": FlameKindling,
+  "Irrigation System": IrrigationIcon      // 💧 irrigation sign
 };
 
 export default function ServicesGrid({ detailed = false }: { detailed?: boolean }) {
