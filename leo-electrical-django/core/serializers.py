@@ -17,6 +17,11 @@ class TestimonialSerializer(serializers.ModelSerializer):
         model = Testimonial
         fields = "__all__"
 
+    def validate_rating(self, value):
+        if not 1 <= value <= 5:
+            raise serializers.ValidationError("Rating must be between 1 and 5.")
+        return value
+
 class LeadSerializer(serializers.ModelSerializer):
     class Meta:
         model = Lead

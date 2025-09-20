@@ -1,5 +1,6 @@
 
 from rest_framework import viewsets, permissions
+from rest_framework import generics, filters
 from .models import Service, Project, Testimonial, Lead
 from .serializers import ServiceSerializer, ProjectSerializer, TestimonialSerializer, LeadSerializer
 
@@ -22,3 +23,14 @@ class LeadViewSet(viewsets.ModelViewSet):
     queryset = Lead.objects.all().order_by('-created')
     serializer_class = LeadSerializer
     permission_classes = [permissions.AllowAny]
+    
+    
+class TestimonialListCreateView(generics.ListCreateAPIView):
+    """
+    GET /api/testimonials/ -> list (newest first)
+    POST /api/testimonials/ -> create {author, quote, rating}
+    """
+    queryset = Testimonial.objects.all().order_by("-created")
+    serializer_class = TestimonialSerializer
+    filter_backends = [filters.SearchFilter]
+    search_fields = ["author", "quote"]
