@@ -15,12 +15,12 @@ export type NewTestimonial = {
   rating: number; // 1..5
 };
 
-const API_BASE = process.env.NEXT_PUBLIC_API_BASE ?? "http://localhost:8000";
+const API_BASE = "https://leokalonga.pythonanywhere.com";
 
 export const testimonialsApi = createApi({
   reducerPath: "testimonialsApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: `${API_BASE}/api/create`,
+    baseUrl: `${API_BASE}/api/create/`,
     // If you need credentials/cookies add: credentials: "include",
   }),
   tagTypes: ["Testimonials"],
