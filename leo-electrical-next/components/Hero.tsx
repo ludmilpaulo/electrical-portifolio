@@ -24,7 +24,7 @@ export default function Hero() {
             * Residential * commercial * industrial
           </p>
           <ul className="mt-6 space-y-2">
-            {["COC compliant", "Emergency call-outs", "Warranty on workmanship"].map((t) => (
+            {["Residential", "commercial", "industrial"].map((t) => (
               <li key={t} className="flex items-center gap-2">
                 <CheckCircle className="w-5 h-5" />
                 <span>{t}</span>
