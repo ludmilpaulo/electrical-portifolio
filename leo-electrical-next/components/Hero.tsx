@@ -14,15 +14,17 @@ export default function Hero() {
             Safe, certified of electrical and plumbing engineering.
           </h1>
           <p className="mt-4 text-lg/relaxed text-white/90">
-            Our 24/H services:
+  Our 24/H services:
+</p>
+<ul className="mt-2 space-y-1 list-disc list-inside text-white/90 text-lg/relaxed">
+  <li>Electrical</li>
+  <li>Plumbing</li>
+  <li>Solar</li>
+  <li>Irrigation System</li>
+</ul>
 
-            * Electrical 
-            * plumbing 
-            * Solar 
-            * irrigation system 
 
-            * Residential * commercial * industrial
-          </p>
+
           <ul className="mt-6 space-y-2">
             {["Residential", "commercial", "industrial"].map((t) => (
               <li key={t} className="flex items-center gap-2">
